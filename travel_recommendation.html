@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bearcub Travel</title>
+  <link rel="stylesheet" href="./travel_recommendation.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="brand">
+        <div class="logo-container">
+            <img src="./bearCub.png" alt="bearcub" class="logo">
+        </div>
+        <div class="company-name">
+            <p>Bearcub</p>
+            <p>Travel</p>
+        </div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="travel_recommendation.html">Home</a></li>
+      <li><a href="about_us.html">About Us</a></li>
+      <li><a href="contact_us.html">Contact Us</a></li>
+    </ul>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search for recommendations...">
+      <button class="search-btn" id="searchButton">Search</button>
+      <button class="reset-btn" id="resetButton">Clear</button>
+    </div>
+  </nav>
+
+  <main class="content">
+
+    <section class="plan-destination">
+        <div class="stacked-title">
+            <div class="title-line">Plan</div>
+            <div class="title-line">Your</div>
+            <div class="title-line">Destination</div>
+        </div>
+    </section>
+    <section class="intro">
+        <p>Bearcub Travel, we specialize in creating personalized travel experiences that cater to your unique preferences and interests.</p>
+        <button class="book-now">Book Now</button>
+    </section>
+  </main>
+
+  <script>
+    // Add functionality to the search and reset buttons
+    document.getElementById('searchButton').addEventListener('click', function() {
+      const searchTerm = document.getElementById('searchInput').value;
+      // Here you would normally implement the search functionality
+      alert('Searching for: ' + searchTerm);
+    });
+
+    document.getElementById('resetButton').addEventListener('click', function() {
+      document.getElementById('searchInput').value = '';
+      // Here you would normally clear any search results
+      alert('Search results cleared');
+    });
+  </script>
+</body>
+</html>
